@@ -1,0 +1,13 @@
+nav {
+	float: left;
+	margin-left: 3%;
+	width: 25%;
+	background-color: #EBEEF4;
+}
+#display {
+	float: right;
+	width: 70%;
+}
+footer {
+	clear: both;
+}

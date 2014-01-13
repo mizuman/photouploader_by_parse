@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>User Login</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div id="user-verify">
+		<form id="login-form">
+			<h2>Log In</h2>
+			<input type="text" id="login-username" placeholder="username">
+			<input type="password" id="login-password" placeholder="password">
+			<input type="button" id="login" value="Log in">
+		</form>
+		<form id="signup-form">
+			<h2>Sign Up</h2>
+			<input type="text" id="signup-username" placeholder="username">
+			<input type="password" id="signup-password" placeholder="password">
+			<input type="button" id="signup" value="Sign up">
+		</form>
+		<p>表示確認用のデモアカウント （ID:mizuman,PW:mizuman）</p>
+	</div>
+	<div id="user-info" style="display:none">
+		<nav>
+			<h2>User Info</h2>
+			<span id="user-name">username</span>
+			<input type="button" id="logout" value="Log out">
+			<div id="main">
+			<h3>Uploads</h3>
+			<!-- Please select an image file<br> -->
+			<span id="input_file">
+				<input type="file" id="FileUpload"/><br>
+				<input type="text" class="form-control" id="title" placeholder="title"><br>
+				<input type="text" class="form-control" id="comment" placeholder="comment"><br>
+			</span>
+			<input type="button" class="btn" id="submit" value="submit" /><br>
+			</div>
+		</nav>
+		<div id="display">
+			<h3>Posts</h3>
+			<table class='table table-hover'>
+				<thead>
+					<tr>
+						<th class='span3'>image</th>
+						<th class='span3'>user</th>
+						<th class='span3'>title</th>
+						<th>comment</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+	<footer>created by mizuman</footer>
+	<script src="./jquery-2.0.3.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.15.min.js"></script>
+	<script type="text/javascript" src="./user.js"></script>
+</body>
+</html>
